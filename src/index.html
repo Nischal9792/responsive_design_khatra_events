@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9249298444.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-orange-300">
+    <nav class="flex align-center justify-between bg-white p-3">
+        <div>
+            <img src="https://static.vecteezy.com/system/resources/previews/000/176/200/original/vector-abstract-company-logo-template-design-illustration.jpg" alt="logo" class="object-cover max-w-12 max-h-12" />
+        </div>
+
+        <!-- Menu for medium screens and larger -->
+        <div class="hidden md:flex gap-12">
+            <ul class="flex flex-row gap-x-4">
+                <li><a href="index.html" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Home</a></li>
+                <li><a href="#" class="font-medium bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Tickets</a></li>
+                <li><a href="#" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Program</a></li>
+                <li><a href="#" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Contact us</a></li>
+                <li><a href="#" class="bg-purple-900 text-white rounded-lg px-4 py-1 align-middle">Buy Tickets</a></li>
+            </ul>
+        </div>
+
+        <!-- Toggle button for small screens -->
+        <div class="md:hidden">
+            <button class="p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Dropdown menu for small screens -->
+    <div class="dropdown-menu hidden flex-col gap-y-8 bg-white p-3 md:hidden z-50 absolute w-full">
+        <ul>
+            <li><a href="index.html" class="block text-black rounded-lg px-4 py-2 align-middle">Home</a></li>
+            <li><a href="#" class="block text-black rounded-lg px-4 py-2 align-middle">Tickets</a></li>
+            <li><a href="#" class="block text-black rounded-lg px-4 py-2 align-middle">Program</a></li>
+            <li><a href="#" class="block text-black rounded-lg px-4 py-2 align-middle">Contact us</a></li>
+            <li><a href="#" class="block text-black rounded-lg px-4 py-2 align-middle">Buy Tickets</a></li>
+        </ul>
+    </div>
+    <main class="bg-amber-200 bg-opacity-80 p-6">
+    <div class="w-[100%] h-[70vh] bg-purple-900 object-cover ">
+        <img src="https://picsum.photos/800/800" class="w-full h-[100%] object-cover" alt="hero-section">
+    </div>
+    <div class="text-center m-4 p-2 border-4 border-blue-400 bg-gray-100">
+        <h1>Party Program</h1>
+        <p>Short Description</p>
+    </div>
+    <!-- <section class=" gap-4 m-4"> -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-8 justify-items-center">
+            <div class="py-10">
+                <div class="rounded-md overflow-hidden shadow-lg max-w-2xl">
+                    <img src="https://picsum.photos/500/500" alt="DJ photo" class="w-full">
+                </div>
+            </div>
+            <div class="py-10">
+                <div class="rounded-md overflow-hidden shadow-lg max-w-2xl">
+                    <img src="https://picsum.photos/500/500" alt="Pic of live music singer" class="w-full">
+                </div>
+            </div>
+            <div class="py-10">
+                <div class="rounded-md overflow-hidden shadow-lg max-w-2xl">
+                    <img src="https://picsum.photos/500/500" alt="Past event Dance Photo" class="w-full">
+                </div>
+            </div>
+            <div class="py-10">
+                <div class="rounded-md overflow-hidden shadow-lg max-w-2xl">
+                    <img src="https://picsum.photos/500/500" alt="Past event Party Photo" class="w-full">
+                </div>
+            </div>
+        </div>
+    <!-- </section> -->
+     <!-- <section> -->
+        <div class="grid md:grid-cols-2 h-[100%] gap-x-4 md:gap-x-6 lg:gap-x-8 mb-16">
+            <div class="flex flex-col gap-y-20 bg-gray-300 rounded p-3 h-[100%] text-center">
+                <h2>Whats Included</h2>
+                <p>Short Description</p>
+            </div>
+            <div class="flex flex-col gap-y-4 h-[100%]  mt-4 lg:mt-0">
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">DJ</div>
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">Live Music</div>
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">Party</div>
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">Fire work</div>
+                <div class="bg-gray-300 text-center h-12 justify-center align-middle p-2">Unlimited fun</div>
+            </div>
+        </div>
+     <!-- </section> -->
+    <!-- <section> -->
+        <div class="flex items-center my-8">
+            <div class="flex-grow border-t border-gray-500"></div>
+            <span class="mx-4 text-xl font-bold">Event Timeline</span>
+            <div class="flex-grow border-t border-gray-500"></div>
+        </div>
+        <section>
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 h-auto w-full">
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                        <h4>12 PM</h4>
+                        <p>Party Start</p>
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                        <h4>12 PM</h4>
+                        <p>Party Start</p>
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                        <h4>12 PM</h4>
+                        <p>Party Start</p>
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                        <h4>12 PM</h4>
+                        <p>Party Start</p>
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                        <h4>12 PM</h4>
+                        <p>Party Start</p>
+                    </div>
+                </div>
+                <div class="relative pb-[100%] bg-cover bg-center" style="background-image: url(https://picsum.photos/300/300);">
+                    <div class="absolute inset-0 text-center text-gray-600 p-2 flex flex-col justify-center">
+                        <h4>12 PM</h4>
+                        <p>Party Start</p>
+                    </div>
+                </div>
+            </div>       
+            </div>
+        </section>
+        <section>
+            <h2 class="text-center font-bold">Get Your Ticket</h2>
+            <div class="py-4 grid md:grid-cols-3 lg:grid-cols-3 h-[70vh] gap-x-4 sm: gap-y-4">
+            <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg');  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+                <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+            </div>
+            <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg'); object-fit: cover;  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+                <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+            </div>
+            <div style="background-image: url('https://www.eventbookings.com/wp-content/uploads/2023/12/7-ways-to-sell-more-concert-tickets-online-1024x584-1.jpg'); object-fit: cover;  height: 100%; width: 100%" class="bg-gray-300 p-4 flex flex-col place-content-end place-items-center h-full bg-no-repeat bg-cover bg-center">
+                <button class="bg-purple-700 text-yellow-400 py-2 px-4 rounded-full hover:bg-purple-800 ">Buy Tickets</button>
+            </div>
+            </div>
+        </section>
+        <section class="mt-16">
+            <h3 class="text-center font-bold">Photo Gallery</h3>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-12 w-full">
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/200/300" alt="image1" class="object-cover w-full h-full">
+                </div>
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/200/300" alt="image2" class="object-cover w-full h-full">
+                </div>
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/200/300" alt="image3" class="object-cover w-full h-full">
+                </div>
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/200/300" alt="image4" class="object-cover w-full h-full">
+                </div>
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/200/300" alt="image5" class="object-cover w-full h-full">
+                </div>
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/200/300" alt="image6" class="object-cover w-full h-full">
+                </div>
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/200/300" alt="image7" class="object-cover w-full h-full">
+                </div>
+                <div class="relative bg-gray-300">
+                    <img src="https://picsum.photos/200/300" alt="image8" class="object-cover w-full h-full">
+                </div>
+            </div>
+        </section>
+        <section class="mt-16">
+            <h4 class="text-center font-bold">Our Team</h4>
+            <div class="grid md:grid-cols-5 gap-x-8 h-[100%] pt-12">
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image11" class="w-[100%] h-[80%]">
+                </div>
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image12" class="w-[100%] h-[80%]">
+                </div>
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image13" class="w-[100%] h-[80%]">
+                </div>
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image14" class="w-[100%] h-[80%]">
+                </div>
+                <div class="w-full h-full">
+                    <img src="https://picsum.photos/200/300" alt="image15" class="w-[100%] h-[80%]">
+                </div>
+            </div>
+            <div class="border-t-2 mt-6">
+                <h4 class="font-bold pt-6">Sponsors logo</h4>
+                <div class="grid md:grid-cols grid-cols-8 gap-4 mb-4 w-full h-[100%]">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png" alt="Sponsor logo 1" w-[100%] h-[100%]>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png" alt="Sponsor logo 2" w-[100%] h-[100%]>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png" alt="Sponsor logo 3" w-[100%] h-[100%]>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png" alt="Sponsor logo 4" w-[100%] h-[100%]>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png" alt="Sponsor logo 5" w-[100%] h-[100%]>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png" alt="Sponsor logo 6" w-[100%] h-[100%]>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png" alt="Sponsor logo 7" w-[100%] h-[100%]>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png" alt="Sponsor logo 8" w-[100%] h-[100%]>
+                </div>
+                <p class="font-bold">Benefit of sponsoring us ko short description</p>
+            </div>
+            <section class="mt-16">
+                <h5 class="text-center font-bold text-lg md:text-xl lg:text-2xl">Inquiry</h5>
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 mt-6">
+                    <div class="space-y-6">
+                        <input type="text" placeholder="Name" class="w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                        <input type="number" placeholder="Contact" class="w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                        <input type="email" placeholder="Email" class="w-full h-10 sm:h-12 md:h-14 lg:h-16 px-3 border rounded-md">
+                    </div>
+                    <div>
+                        <textarea placeholder="Message" class="w-full h-32 sm:h-40 md:h-48 lg:h-56 p-3 border rounded-md"></textarea>
+                    </div>
+                </div>
+                <div class="flex justify-end mt-6 w-full">
+                    <button class="bg-purple-700 text-yellow-400 rounded-full px-4 py-3 text-sm md:text-base lg:text-lg">Submit</button>
+                </div>
+                <div class="border-t-2 mt-8">
+                    <h6 class="text-center font-bold text-lg md:text-xl lg:text-2xl my-8 p-4">About Us</h6>
+                </div>
+                <div class="border-t-2 mt-8">
+                    <h6 class="text-center font-bold text-lg md:text-xl lg:text-2xl my-8 p-4">Map</h6>
+                </div>
+            </section>
+            
+            <section class="mt-12 mb-0">
+                <div class="border-t-2 my-4 text-center">
+                    <p class="text-sm md:text-base lg:text-lg">Copyright reserved by Khatra Events</p>
+                    <p class="text-sm md:text-base lg:text-lg"><strong>Powered By KhatraTech</strong></p>
+                </div>
+            </section>
+            
+        
+        
+     
+        
+    <!-- </section> -->
+</main>
+<script>
+    function handleMenu() {
+        const dropdown = document.querySelector(".dropdown-menu");
+        dropdown.classList.toggle("hidden");
+    }
+</script>
+</body>
+</html>
